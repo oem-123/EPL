@@ -15,14 +15,15 @@ interface Formation {
 }
 
 const PRESETS: Formation[] = [
-  { name: '4-4-2',    label: 'Classic',      gk:1, def:4, mid:4, fwd:2, bench:4 },
-  { name: '4-3-3',    label: 'Attacking',    gk:1, def:4, mid:3, fwd:3, bench:4 },
-  { name: '3-5-2',    label: 'Wing Heavy',   gk:1, def:3, mid:5, fwd:2, bench:4 },
-  { name: '4-2-3-1',  label: 'Modern',       gk:1, def:4, mid:5, fwd:1, bench:4 },
-  { name: '5-3-2',    label: 'Defensive',    gk:1, def:5, mid:3, fwd:2, bench:4 },
-  { name: '5-4-1',    label: 'Ultra Def',    gk:1, def:5, mid:4, fwd:1, bench:4 },
-  { name: '4-5-1',    label: 'Midfield',     gk:1, def:4, mid:5, fwd:1, bench:4 },
-  { name: '3-4-3',    label: 'Ultra Attack', gk:1, def:3, mid:4, fwd:3, bench:4 },
+  { name: '4-4-2',    label: 'Classic',      gk:1, def:4, mid:4, fwd:2, bench:6 },
+  { name: '4-3-3',    label: 'Attacking',    gk:1, def:4, mid:3, fwd:3, bench:6 },
+  { name: '3-5-2',    label: 'Wing Heavy',   gk:1, def:3, mid:5, fwd:2, bench:6 },
+  { name: '3-6-1',    label: 'Wing Heavy2',  gk:1, def:3, mid:6, fwd:1, bench:6 },
+  { name: '4-2-3-1',  label: 'Modern',       gk:1, def:4, mid:5, fwd:1, bench:6 },
+  { name: '5-3-2',    label: 'Defensive',    gk:1, def:5, mid:3, fwd:2, bench:6 },
+  { name: '5-4-1',    label: 'Ultra Def',    gk:1, def:5, mid:4, fwd:1, bench:6 },
+  { name: '4-5-1',    label: 'Midfield',     gk:1, def:4, mid:5, fwd:1, bench:6 },
+  { name: '3-4-3',    label: 'Ultra Attack', gk:1, def:3, mid:4, fwd:3, bench:6 },
 ];
 
 function buildSlots(cfg: { gk: number; def: number; mid: number; fwd: number; bench: number }, old: SlotConfiguration[]): SlotConfiguration[] {
